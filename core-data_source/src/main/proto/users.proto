@@ -1,0 +1,84 @@
+syntax = "proto3";
+
+option java_package = "ru.cft.data_source.local";
+option java_multiple_files = true;
+
+message UsersListResponse {
+  repeated UserModel results = 1;
+}
+
+message UserModel {
+  string gender = 1;
+  Name name = 2;
+  Location location = 3;
+  string email = 4;
+  Login login = 5;
+  Dob dob = 6;
+  Registered registered = 7;
+  string phone = 8;
+  string cell = 9;
+  Id id = 10;
+  Picture picture = 11;
+  string nat = 12;
+}
+
+message Name {
+  string title = 1;
+  string first = 2;
+  string last = 3;
+}
+
+message Street {
+  int32 number = 1;
+  string name = 2;
+}
+
+message Coordinates {
+  string latitude = 1;
+  string longitude = 2;
+}
+
+message Timezone {
+  string offset = 1;
+  string description = 2;
+}
+
+message Location {
+  Street street = 1;
+  string city = 2;
+  string state = 3;
+  string country = 4;
+  Coordinates coordinates = 5;
+  Timezone timezone = 6;
+}
+
+message Login {
+  string uuid = 1;
+  string username = 2;
+  string password = 3;
+  string salt = 4;
+  string md5 = 5;
+  string sha1 = 6;
+  string sha256 = 7;
+}
+
+message Dob {
+  string date = 1;
+  int32 age = 2;
+}
+
+message Registered {
+  string date = 1;
+  int32 age = 2;
+}
+
+message Id {
+  string name = 1;
+  string value = 2;
+}
+
+message Picture {
+  string large = 1;
+  string medium = 2;
+  string thumbnail = 3;
+}

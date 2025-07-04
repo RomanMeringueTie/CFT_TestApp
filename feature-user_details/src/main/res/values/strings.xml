@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">Back</string>
+    <string name="user_details">User Details</string>
+    <string name="user_picture">User Picture</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="cell">Cell</string>
+    <string name="username">Username</string>
+    <string name="nationality">Nationality</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="registered">Registered</string>
+    <string name="address">Address</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="timezone">Timezone</string>
+</resources>
